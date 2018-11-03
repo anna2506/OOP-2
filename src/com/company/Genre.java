@@ -4,7 +4,6 @@ import java.util.List;
 
 public class Genre
 {
-    private LinkedList<Song> collection = new LinkedList<Song>();
     private String name;
     private List <Genre> parents;
     private List <Genre> children;
