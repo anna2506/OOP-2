@@ -1,6 +1,4 @@
 package com.company;
-
-import javax.naming.Name;
 import java.util.*;
 
 public final class Cathalog
@@ -86,6 +84,18 @@ public final class Cathalog
         for(Genre child : genre.getChildren())
         {
             songs.addAll(getSongs(child));
+        }
+        return songs;
+    }
+    public static  List<Song>  getSongs(Group group)
+    {
+        List<Song> songs = new ArrayList<>();
+        for(Map.Entry<String, Song> entry : songMap.entrySet())
+        {
+            if(group.equals(entry.getValue().getAlbum().getGroup()))
+            {
+                songs.add(entry.getValue());
+            }
         }
         return songs;
     }

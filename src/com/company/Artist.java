@@ -18,4 +18,5 @@ public class Artist{
     public String toString() {
         return "Pseudonym of artist is: "+pseudonym;
     }
+
 }

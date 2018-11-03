@@ -1,7 +1,5 @@
 package com.company;
-
 import java.util.LinkedList;
-import java.util.List;
 
 public class Compilation {
   private String name;

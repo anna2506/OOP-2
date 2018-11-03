@@ -1,7 +1,5 @@
 package com.company;
 
-import java.util.Date;
-
 public class Song {
     private final String name;
     private Album album;

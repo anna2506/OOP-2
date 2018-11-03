@@ -39,4 +39,13 @@ public class Group {
     {
         return "Name of group: " + name;
     }
+    @Override
+    public boolean equals(Object object)
+    {
+        if(object == null || this.getClass()!= object.getClass())
+        {
+            return false;
+        }
+        return this.name.equals(((Group)object).name);
+    }
 }

@@ -1,5 +1,4 @@
 package com.company;
-import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -41,12 +40,13 @@ public class Genre
     }
 
     @Override
-    public boolean equals(Object obj) {
-        if(obj==null || this.getClass()!=obj.getClass())
+    public boolean equals(Object object)
+    {
+        if(object == null || this.getClass()!= object.getClass())
         {
             return false;
         }
-        return this.name == ((Genre)obj).name;
+        return this.name.equals(((Genre)object).name);
     }
 
     @Override
